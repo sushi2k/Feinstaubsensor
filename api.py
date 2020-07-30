@@ -60,9 +60,10 @@ def create_record():
 
 @app.route('/values',methods=['GET'])
 def index1():
-    return jsonify({'
+    return jsonify({    
                         'pm25': '10',
-                        'pm10': '30'})
+                        'pm10': '30'
+                    })
 
 
 app.run(host='0.0.0.0')
